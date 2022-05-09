@@ -3,55 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=/, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <title>Around the U.S.</title>
+    <title>Around The U.S.</title>
   </head>
   <body class="page">
     <header class="header">
-      <img src="images/header_logo.svg" alt="Around the U.S." class="header__logo">
+      <img src="images/header.svg" alt="Around the U.S." class="header__logo">
     </header>
     <main class="body">
       <section class="profile">
+        <img src="images/cousteau.png" alt="French explorer, Jacques Cousteau" class="profile__image">
         <div class="profile__details">
-          <img src="images/cousteau.png" alt="French explorer, Jacques Cousteau" class="profile__image">
+          
           <div class="profile__text">
-            <div class="profile__name">
-              <h1 class="profile__name-default">Jacques Cousteau</h1>
-              <button class="profile__edit-button"></button>
-            </div>
+            <h1 class="profile__name">Jacques Cousteau</h1>
+            <p class="profile__title">Explorer</p>
           </div>
+          <button class="profile__edit-button" type="button"></button>
         </div>
+        </div>
+        <button class="profile__add-button" type="button"></button>
       </section>
-      <section class="cards">
-        <div class="cards__place">
-          <img src="images/kirill-pershin-1.png" alt="Yosemite Valley" class="cards__image">
-          <div class="cards__location"><h2 class="cards__location-title">Yosemite Valley</h2><button class="cards__like-button"></button></div>
-        </div>
-        <div class="cards__place">
-          <img src="images/kirill-pershin-2.png" alt="Lake Louise" class="cards__image">
-          <div class="cards__location"><h2 class="cards__location-title">Lake Louise</h2><button class="cards__like-button"></button></div>
-        </div>
-        <div class="cards__place">
-          <img src="images/kirill-pershin-3.png" alt="Bald Mountains" class="cards__image">
-          <div class="cards__location"><h2 class="cards__location-title">Bald Mountains</h2><button class="cards__like-button"></button></div>
-        </div>
-        <div class="cards__place">
-          <img src="images/kirill-pershin-4.png" alt="Latemar" class="cards__image">
-          <div class="cards__location"><h2 class="cards__location-title">Latemar</h2><button class="cards__like-button"></button></div>
-        </div>
-        <div class="cards__place">
-          <img src="images/kirill-pershin-5.png" alt="Vanoise National Park" class="cards__image">
-          <div class="cards__location"><h2 class="cards__location-title">Vanoise National Park</h2><button class="cards__like-button"></button></div>
-        </div>
-        <div class="cards__place">
-          <img src="images/kirill-pershin-1.png" alt="Lago di Braies" class="cards__image">
-          <div class="cards__location"><h2 class="cards__location-title">Lago di Braies</h2><button class="cards__like-button"></button></div>
-        </div>
-      </section>
+      <ul class="cards">
+        <li class="cards__place">
+          <img src="images/yosemite.png" alt="Yosemite Valley" class="cards__image">
+          <div class="cards__location"><h2 class="cards__location-title">Yosemite Valley</h2><button class="cards__like-button" type="button"></button></div>
+        </li>
+        <li class="cards__place">
+          <img src="images/louise.png" alt="Lake Louise" class="cards__image">
+          <div class="cards__location"><h2 class="cards__location-title">Lake Louise</h2><button class="cards__like-button" type="button"></button></div>
+        </li>
+        <li class="cards__place">
+          <img src="images/bald.png" alt="Bald Mountains" class="cards__image">
+          <div class="cards__location"><h2 class="cards__location-title">Bald Mountains</h2><button class="cards__like-button" type="button"></button></div>
+        </li>
+        <li class="cards__place">
+          <img src="images/latemar.png" alt="Latemar" class="cards__image">
+          <div class="cards__location"><h2 class="cards__location-title">Latemar</h2><button class="cards__like-button" type="button"></button></div>
+        </li>
+        <li class="cards__place">
+          <img src="images/vanoise.png" alt="Vanoise National Park" class="cards__image">
+          <div class="cards__location"><h2 class="cards__location-title">Vanoise National Park</h2><button class="cards__like-button" type="button"></button></div>
+        </li>
+        <li class="cards__place">
+          <img src="images/lago.png" alt="Lago di Braies" class="cards__image">
+          <div class="cards__location"><h2 class="cards__location-title">Lago di Braies</h2><button class="cards__like-button" type="button"></button></div>
+        </li>
+      </ul>
   </main>
     <footer class="footer">
     <p>&copy; 2021 Around The U.S.</p>
     </footer>
+    <div class="popup popup__edit-box">
+      <div class="popup__content">
+        <form class="popup__form popup__form_edit" id="edit-profile-form">
+          <h3 class="popup__title">Edit profile</h3>
+          <input name="name" placeholder="Jacques Cousteau" type="text"  class="popup__form-input popup__form-input_name" />
+          <input name="title" placeholder="Explorer" type="text"  class="popup__form-input popup__form-input_title" />
+          <button class="popup__save-button" type="submit">Save</button>
+        </form>
+      <button class="popup__close-button" type="button"></button>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

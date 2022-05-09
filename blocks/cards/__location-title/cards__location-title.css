@@ -1,0 +1,9 @@
+.cards__location-title {
+    margin: 25px 0 31px 21px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 222px;
+    
+    
+}
