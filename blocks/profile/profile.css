@@ -2,20 +2,17 @@
     display: flex;
     max-width: 880px;
     margin: 36.25px auto 46.25px;
-    max-height: 210px;
 }
 
 @media screen and (max-width: 925px) {
     .profile {
       flex-direction: column;
       align-items: center;
-      max-height: fit-content;
     }
   }
 
   @media screen and (max-width: 675px) {
     .profile {
       margin: 38.25px auto 36px;
-      max-height: fit-content;
     }
   }

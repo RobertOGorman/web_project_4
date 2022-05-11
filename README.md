@@ -2,7 +2,7 @@
 
 ### Overview
 
-This is a project features an interactive page where users can add, remove, or like photos. 
+This is a project which features an interactive page where users can add, remove, or like photos. 
 
 
 ### Technologies

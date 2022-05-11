@@ -6,16 +6,23 @@ const profileEditForm = document.querySelector("#edit-profile-form");
 const profileNameEl = document.querySelector(".profile__name");
 const profileTitleEl = document.querySelector(".profile__title");
 
+const profileNameInput = document.querySelector (".popup__form-input_type_name")
+const profileTitleInput = document.querySelector(".popup__form-input_type_title")
 
 function openPopup () {
-    profileEditPopup.classList.add("popup__open");
+    profileEditPopup.classList.add("popup_open");
 }
 
 function closePopup() {
-    profileEditPopup.classList.remove("popup__open");
+    profileEditPopup.classList.remove("popup_open");
 }
 
 profileEditButton.addEventListener('click', () => {
+
+    profileNameInput.value = profileNameEl.textContent;
+
+    profileTitleInput.value = profileTitleEl.textContent;
+
     openPopup()
 });
 
